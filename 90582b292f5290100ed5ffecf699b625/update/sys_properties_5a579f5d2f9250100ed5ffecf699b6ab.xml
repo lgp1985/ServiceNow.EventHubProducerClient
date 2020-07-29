@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Connection string with Shared Access Signature (SAS) token from itsm-dev.servicebus.windows.net</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>SASitsm-dev.servicebus.windows.net</name>
+        <read_roles/>
+        <suffix/>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-28 16:52:09</sys_created_on>
+        <sys_id>5a579f5d2f9250100ed5ffecf699b6ab</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>SASitsm-dev.servicebus.windows.net</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure Event Hub">90582b292f5290100ed5ffecf699b625</sys_scope>
+        <sys_update_name>sys_properties_5a579f5d2f9250100ed5ffecf699b6ab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-29 12:32:07</sys_updated_on>
+        <type>string</type>
+        <value>Endpoint=sb://itsm-dev.servicebus.windows.net/;SharedAccessKeyName=xompilotdev-sender;SharedAccessKey=9tfva7/1EjdM80srWxoYZM86yOJrIr7Q5sRLl4LbrZs=;EntityPath=xompilotdev-task</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=5a579f5d2f9250100ed5ffecf699b6ab"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Azure Event Hub">90582b292f5290100ed5ffecf699b625</claim_owner_scope>
+        <claim_timestamp>1739a822b3b0000001</claim_timestamp>
+        <metadata_update_name>sys_properties_5a579f5d2f9250100ed5ffecf699b6ab</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Azure Event Hub</previous_claim_name>
+        <previous_claim_scope>90582b292f5290100ed5ffecf699b625</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-29 12:18:08</sys_created_on>
+        <sys_id>90a8e3692f5290100ed5ffecf699b627</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-29 12:18:08</sys_updated_on>
+    </sys_claim>
+</record_update>

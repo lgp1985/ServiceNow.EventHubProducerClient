@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.EventHubProducerClient</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>EventHubProducerClient</name>
+        <script><![CDATA[gs.include('GlideRecordExtensions');
+
+var EventHubProducerClient = Class.create();
+EventHubProducerClient.prototype = {
+    connectionProperties: '',
+    sas: '',
+    initialize: function (connectionString) {
+        this.connectionProperties = ConnectionStringToPropertyBag(connectionString);
+        this.sas = createSharedAccessToken(this.connectionProperties.Endpoint, this.connectionProperties.SharedAccessKeyName, this.connectionProperties.SharedAccessKey);
+    },
+    send: function send(params) {
+        try {
+            var r = new sn_ws.RESTMessageV2('itsm-dev.servicebus.windows.net', 'Default POST');
+
+            r.setEndpoint([this.connectionProperties.Endpoint.replace('sb://', 'https://'), this.connectionProperties.EntityPath, "/messages?timeout=60&api-version=2014-01"].join(''));
+            r.setRequestHeader('Authorization', this.sas);
+            var body = '';
+            if (typeof params === 'string' || params instanceof String) {
+                body = params;
+            } else {
+                body = JSON.stringify(params);
+            }
+            r.setRequestBody(body);
+
+            var response = r.execute();
+            return response;
+        } catch (ex) {
+            var message = ex.message;
+            gs.error(message, 'eventProducer');
+        }
+    },
+    type: 'EventHubProducerClient'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-29 14:36:58</sys_created_on>
+        <sys_id>277e7be52f9290100ed5ffecf699b6c1</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>EventHubProducerClient</sys_name>
+        <sys_package display_value="Azure Event Hub" source="90582b292f5290100ed5ffecf699b625">90582b292f5290100ed5ffecf699b625</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure Event Hub">90582b292f5290100ed5ffecf699b625</sys_scope>
+        <sys_update_name>sys_script_include_277e7be52f9290100ed5ffecf699b6c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-29 18:23:09</sys_updated_on>
+    </sys_script_include>
+</record_update>

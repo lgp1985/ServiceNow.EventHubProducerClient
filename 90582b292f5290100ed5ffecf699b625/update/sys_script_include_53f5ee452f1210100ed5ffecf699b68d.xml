@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>global.createSharedAccessToken</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>createSharedAccessToken</name>
+        <script><![CDATA[function createSharedAccessToken(uri, saName, saKey) {
+    if (!uri || !saName || !saKey) {
+        throw "Missing required parameter";
+    }
+    var encoded = encodeURIComponent(uri);
+    var now = new Date();
+    var week = 60 * 60 * 24 * 7;
+    var ttl = Math.round(now.getTime() / 1000) + week;
+    var signature = encoded + '\n' + ttl;
+    var signatureUTF8 = utf8.encode(signature);
+    var createHmac = function createHmac(key, data) {
+        var mac = new GlideCertificateEncryption;
+        key = GlideStringUtil.base64Encode(key);
+        return mac.generateMac(key, "HmacSHA256", data);
+    };
+    var hash = createHmac(saKey, signatureUTF8); //var hash = crypto.createHmac('sha256', saKey).update(signatureUTF8).digest('base64'); 	
+    return 'SharedAccessSignature sr=' + encoded + '&sig=' +
+        encodeURIComponent(hash) + '&se=' + ttl + '&skn=' + saName;
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-27 18:14:54</sys_created_on>
+        <sys_id>53f5ee452f1210100ed5ffecf699b68d</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>createSharedAccessToken</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure Event Hub">90582b292f5290100ed5ffecf699b625</sys_scope>
+        <sys_update_name>sys_script_include_53f5ee452f1210100ed5ffecf699b68d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-29 13:20:51</sys_updated_on>
+    </sys_script_include>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Azure Event Hub">90582b292f5290100ed5ffecf699b625</claim_owner_scope>
+        <claim_timestamp>1739a81f1300000001</claim_timestamp>
+        <metadata_update_name>sys_script_include_53f5ee452f1210100ed5ffecf699b68d</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Azure Event Hub</previous_claim_name>
+        <previous_claim_scope>90582b292f5290100ed5ffecf699b625</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-29 12:17:53</sys_created_on>
+        <sys_id>e4982f292f5290100ed5ffecf699b616</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-29 12:17:53</sys_updated_on>
+    </sys_claim>
+</record_update>

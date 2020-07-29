@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>global.GlideRecordExtensions</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>GlideRecordExtensions</name>
+        <script><![CDATA[GlideRecord.prototype.toJSON = function () {
+    var obj = {};
+	obj['_displayValues']={};
+
+    for (var prop in this) {
+        if (this[prop]) {
+            obj[prop] = this.getValue(prop);
+            obj._displayValues[prop] = this.getDisplayValue(prop);
+        }
+    }
+
+    return obj;
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-29 17:36:06</sys_created_on>
+        <sys_id>b2d03cf52f5690100ed5ffecf699b632</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>GlideRecordExtensions</sys_name>
+        <sys_package display_value="Azure Event Hub" source="90582b292f5290100ed5ffecf699b625">90582b292f5290100ed5ffecf699b625</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure Event Hub">90582b292f5290100ed5ffecf699b625</sys_scope>
+        <sys_update_name>sys_script_include_b2d03cf52f5690100ed5ffecf699b632</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-29 18:21:28</sys_updated_on>
+    </sys_script_include>
+</record_update>
