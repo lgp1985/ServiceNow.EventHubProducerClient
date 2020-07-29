@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="DELETE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>{"message":"this is a test"}</content>
+        <function_name>test POST</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>itsm-dev.servicebus.windows.net [ test POST ]</qualified_name>
+        <rest_endpoint>https://itsm-dev.servicebus.windows.net/xompilotdev-task/messages?timeout=60&amp;api-version=2014-01</rest_endpoint>
+        <rest_message display_value="itsm-dev.servicebus.windows.net">9f7cc0292f5650100ed5ffecf699b6f1</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-29 12:40:23</sys_created_on>
+        <sys_id>552d2f6d2f5290100ed5ffecf699b687</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test POST</sys_name>
+        <sys_package display_value="Azure Event Hub" source="90582b292f5290100ed5ffecf699b625">90582b292f5290100ed5ffecf699b625</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure Event Hub">90582b292f5290100ed5ffecf699b625</sys_scope>
+        <sys_update_name>sys_rest_message_fn_552d2f6d2f5290100ed5ffecf699b687</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-29 12:40:23</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Azure Event Hub">90582b292f5290100ed5ffecf699b625</application>
+        <file_path/>
+        <instance_id>b64b6de9db7a4c500b9d21c405961929</instance_id>
+        <instance_name>dev99511</instance_name>
+        <name>sys_rest_message_fn_552d2f6d2f5290100ed5ffecf699b687</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content>{"message":"this is a test"}</content><function_name>test POST</function_name><http_method>post</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>itsm-dev.servicebus.windows.net [ test POST ]</qualified_name><rest_endpoint>https://itsm-dev.servicebus.windows.net/xompilotdev-task/messages?timeout=60&amp;api-version=2014-01</rest_endpoint><rest_message display_value="itsm-dev.servicebus.windows.net">9f7cc0292f5650100ed5ffecf699b6f1</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-07-29 12:40:23</sys_created_on><sys_id>552d2f6d2f5290100ed5ffecf699b687</sys_id><sys_mod_count>0</sys_mod_count><sys_name>test POST</sys_name><sys_package display_value="Azure Event Hub" source="90582b292f5290100ed5ffecf699b625">90582b292f5290100ed5ffecf699b625</sys_package><sys_policy/><sys_scope display_value="Azure Event Hub">90582b292f5290100ed5ffecf699b625</sys_scope><sys_update_name>sys_rest_message_fn_552d2f6d2f5290100ed5ffecf699b687</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-07-29 12:40:23</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+        <payload_hash>-1932175807</payload_hash>
+        <record_name>test POST</record_name>
+        <reverted_from/>
+        <source>935df77e2fc210100ed5ffecf699b6eb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-29 12:40:23</sys_created_on>
+        <sys_id>4ebdaf6d2f5290100ed5ffecf699b6e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1739a9687590000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-29 12:40:23</sys_updated_on>
+        <type>HTTP Method</type>
+        <update_guid>86bdaf6dd8529010e046f4e9fae9cee8</update_guid>
+        <update_guid_history>86bdaf6dd8529010e046f4e9fae9cee8:-1932175807</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-29 13:20:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn">sys_rest_message_fn</sys_db_object>
+        <sys_id>04960a63e8ae43a6b3c02cbc8f4a2b84</sys_id>
+        <sys_metadata>552d2f6d2f5290100ed5ffecf699b687</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test POST</sys_name>
+        <sys_package display_value="Azure Event Hub" source="90582b292f5290100ed5ffecf699b625">90582b292f5290100ed5ffecf699b625</sys_package>
+        <sys_parent display_value="itsm-dev.servicebus.windows.net">9f7cc0292f5650100ed5ffecf699b6f1</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Azure Event Hub">90582b292f5290100ed5ffecf699b625</sys_scope>
+        <sys_scope_delete display_value="">5746f64e608c411dab6ad95be4c82f59</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_552d2f6d2f5290100ed5ffecf699b687</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_552d2f6d2f5290100ed5ffecf699b687">4ebdaf6d2f5290100ed5ffecf699b6e8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-29 13:20:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

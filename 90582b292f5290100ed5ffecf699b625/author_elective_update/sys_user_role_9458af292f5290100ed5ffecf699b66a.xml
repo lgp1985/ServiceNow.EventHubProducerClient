@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>azure_event_hub_user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix/>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-29 12:16:47</sys_created_on>
+        <sys_id>9458af292f5290100ed5ffecf699b66a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>azure_event_hub_user</sys_name>
+        <sys_package display_value="">90582b292f5290100ed5ffecf699b625</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="">90582b292f5290100ed5ffecf699b625</sys_scope>
+        <sys_update_name>sys_user_role_9458af292f5290100ed5ffecf699b66a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-29 12:16:47</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Azure Event Hub">90582b292f5290100ed5ffecf699b625</application>
+        <file_path/>
+        <instance_id>b64b6de9db7a4c500b9d21c405961929</instance_id>
+        <instance_name>dev99511</instance_name>
+        <name>sys_user_role_9458af292f5290100ed5ffecf699b66a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>azure_event_hub_user</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix/><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-07-29 12:16:47</sys_created_on><sys_id>9458af292f5290100ed5ffecf699b66a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>azure_event_hub_user</sys_name><sys_package display_value="">90582b292f5290100ed5ffecf699b625</sys_package><sys_policy/><sys_scope display_value="">90582b292f5290100ed5ffecf699b625</sys_scope><sys_update_name>sys_user_role_9458af292f5290100ed5ffecf699b66a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-07-29 12:16:47</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>1351018579</payload_hash>
+        <record_name>azure_event_hub_user</record_name>
+        <reverted_from/>
+        <source>935df77e2fc210100ed5ffecf699b6eb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-29 12:16:47</sys_created_on>
+        <sys_id>9058af292f5290100ed5ffecf699b6a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1739a80ecba0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-29 12:16:47</sys_updated_on>
+        <type>Role</type>
+        <update_guid>d858af29605290102df31097051ec9a0</update_guid>
+        <update_guid_history>d858af29605290102df31097051ec9a0:1351018579</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="azure_event_hub_user">8ad8ab692f5290100ed5ffecf699b6a5</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-29 12:19:05</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>3a88e6232f5d44e08e88f918e8d1cc10</sys_id>
+        <sys_metadata>9458af292f5290100ed5ffecf699b66a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>azure_event_hub_user</sys_name>
+        <sys_package display_value="Azure Event Hub" source="90582b292f5290100ed5ffecf699b625">90582b292f5290100ed5ffecf699b625</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Azure Event Hub">90582b292f5290100ed5ffecf699b625</sys_scope>
+        <sys_scope_delete display_value="">5746f64e608c411dab6ad95be4c82f59</sys_scope_delete>
+        <sys_update_name>sys_user_role_9458af292f5290100ed5ffecf699b66a</sys_update_name>
+        <sys_update_version display_value="sys_user_role_9458af292f5290100ed5ffecf699b66a">9058af292f5290100ed5ffecf699b6a1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-29 12:19:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
